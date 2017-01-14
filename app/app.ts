@@ -15,10 +15,10 @@ export class AppComponent {
     
     constructor() {
         var menu = remote.Menu.buildFromTemplate([{
-            label: 'File',
+            label: 'File ',
             submenu: [
                 {
-                    label: 'Open',
+                    label: 'Open ',
                     click: function(){
                       dialog.showOpenDialog((cb) => {
                           
@@ -26,7 +26,7 @@ export class AppComponent {
                     }
                 },
                 {
-                    label: 'Open Window',
+                    label: 'Open Window ',
                     click: function(){
                       ipcRenderer.send('open-custom');
                           let notification = new Notification('Customdialog', {
